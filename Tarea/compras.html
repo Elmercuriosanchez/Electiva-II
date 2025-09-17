@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Emblem: Sacred Stones - Comprar</title>
+</head>
+<body>
+    <header>
+        <h1>Fire Emblem: Sacred Stones - Comprar</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="compras.html">Comprar</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="section-box">
+                <h2>Solicitud de Compra - Fire Emblem: Sacred Stones</h2>
+                
+                <!-- Espacio para imagen promocional -->
+                <div>
+                    <img src="imagenes/oferta.jpg" alt="Oferta especial de Fire Emblem: Sacred Stones" style="max-width: 100%; border: 1px dashed #ccc; padding: 10px;">
+                </div>
+                
+                <p>Complete el siguiente formulario para solicitar su copia de Fire Emblem: Sacred Stones. Nos pondremos en contacto con usted para confirmar su pedido y los detalles de pago.</p>
+            </div>
+        </div>
+        <div class="section-box">
+            <h2>Formulario de Solicitud de Compra</h2>
+            <form>
+                <h3>Información Personal</h3>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="telefono">Teléfono de contacto:</label><br>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+                
+                <label for="direccion">Dirección de envío:</label><br>
+                <textarea id="direccion" name="direccion" rows="3" required></textarea><br><br>
+                
+                <h3>Detalles del Producto</h3>
+                <label for="plataforma">Plataforma:</label><br>
+                <select id="plataforma" name="plataforma" required>
+                    <option value="">Selecciona una plataforma</option>
+                    <option value="gba">Game Boy Advance (Físico)</option>
+                    <option value="3ds">Nintendo 3DS (Virtual Console)</option>
+                    <option value="wiiu">Wii U (Virtual Console)</option>
+                    <option value="switch">Nintendo Switch Online</option>
+                </select><br><br>
+                
+                <label for="cantidad">Cantidad:</label><br>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required><br><br>
+                
+                <label for="edicion">Edición:</label><br>
+                <select id="edicion" name="edicion">
+                    <option value="estandar">Edición Estándar</option>
+                    <option value="coleccionista">Edición Coleccionista (con artbook)</option>
+                </select><br><br>
+                
+                <h3>Método de Pago</h3>
+                <label>Selecciona método de pago:</label><br>
+                <input type="radio" id="tarjeta" name="metodo-pago" value="tarjeta" checked>
+                <label for="tarjeta">Tarjeta de crédito/débito</label><br>
+                
+                <input type="radio" id="paypal" name="metodo-pago" value="paypal">
+                <label for="paypal">PayPal</label><br>
+                
+                <input type="radio" id="transferencia" name="metodo-pago" value="transferencia">
+                <label for="transferencia">Transferencia bancaria</label><br><br>
+                
+                <div id="datos-tarjeta">
+                    <label for="num-tarjeta">Número de tarjeta:</label><br>
+                    <input type="text" id="num-tarjeta" name="num-tarjeta" placeholder="1234 5678 9012 3456"><br><br>
+                    
+                    <label for="fecha-vencimiento">Fecha de vencimiento:</label><br>
+                    <input type="month" id="fecha-vencimiento" name="fecha-vencimiento"><br><br>
+                    
+                    <label for="cvv">CVV:</label><br>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3"><br><br>
+                </div>
+                
+                <label for="comentarios">Comentarios adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="3" placeholder="Instrucciones especiales para la entrega..."></textarea><br><br>
+                
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones de compra</label><br><br>
+                
+                <input type="submit" value="Realizar Pedido">
+                <input type="reset" value="Limpiar Formulario">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Fire Emblem: Sacred Stones. Todos los derechos reservados a Nintendo e Intelligent Systems.</p>
+    </footer>
+</body> 
+</html>
